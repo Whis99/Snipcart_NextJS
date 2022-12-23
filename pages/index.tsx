@@ -7,7 +7,6 @@ import halfmoonBettaPicture from "../public/halfmoon.jpg";
 import dragonScaleBettaPicture from "../public/dragonscale.jpg";
 import crowntailBettaPicture from "../public/crowntail.jpeg";
 import veiltailBettaPicture from "../public/veiltail.jpg";
-import saloonPicture from "../public/saloon.jpg";
 import {GetStaticProps} from "next";
 import Jumbotron from "../components/Jumbotron";
 
@@ -31,8 +30,7 @@ export default function Home({products}: IProductListProps) {
                 <Contact/>
             </main>
             <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"/>
-            <div hidden id="snipcart" data-api-key="OWNlZTNlYmItZTU5OS00MmI4LThjOTAtMjY0NzAyYmI2ODAxNjM3NjIyMjY3MDMxMTIzMzUx
-"></div>
+            <div hidden id="snipcart" data-api-key="MzJhYTRmOWItODU4OC00M2RkLWJhNzUtOTRkNDA4YmVkMTJINjM4MDUzNTI4NTE3ODMyNjE0"></div>
         </>
     )
 }
@@ -67,15 +65,6 @@ export const products: IProduct[] = [
         name: "Veiltail Betta",
         price: 5.00,
         image: veiltailBettaPicture,
-        description: "By far the most common betta fish. You can recognize it by its long tail aiming downwards.",
-        url: '/api/products/veiltail'
-    },
-
-    {
-        id: "Saloon",
-        name: "Saloon Betta",
-        price: 5.00,
-        image: saloonPicture,
         description: "By far the most common betta fish. You can recognize it by its long tail aiming downwards.",
         url: '/api/products/veiltail'
     }

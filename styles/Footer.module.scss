@@ -2,12 +2,13 @@
 
 .footer {
   color: white;
-  background: linear-gradient(90deg, #707070 0%, #474747 100%);
+  background: linear-gradient(mixins.$color-light-purple 50%);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 20px;
   &__left {
-    margin-right: auto;
+    margin-right: 20px;
   }
 
   a {

@@ -3,53 +3,63 @@
 .product {
   display: grid;
   width: 100%;
+  box-shadow: 0 18.025px 43.775px rgba(0, 0, 0, 0.932);
 
   grid-template-areas:
-  "title        image"
-  "description  image"
-  "button       image"
-  ".            image";
+  "title        title         image"
+  "description  description  image"
+  "button       button       image"
+  ".            .            image";
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 100px;
   grid-column-gap: 100px;
 
-  // &:nth-of-type(odd) {
-  //   grid-template-areas:
-  //   "image title"
-  //   "image description"
-  //   "image button"
-  //   "image .    ";
-  //   grid-template-columns: 1fr 1fr 1fr;
+  &:nth-of-type(odd) {
+    grid-template-areas:
+    "image title        title"
+    "image description  description"
+    "image button       button"
+    "image .            .";
+    grid-template-columns: 1fr 1fr 1fr;
 
-  //   @include mixins.mobile {
-  //     grid-template-areas:
-  //     "image        image      "
-  //     "title         title     "
-  //     "description  description"
-  //     "button       button     ";
-  //     grid-template-columns: 1fr 1fr;
+    @include mixins.mobile {
+      grid-template-areas:
+      "image        image      "
+      "title         title     "
+      "description  description"
+      "button       button     ";
+      grid-template-columns: 1fr 1fr;
 
-  //     img {
-  //       height: auto;
-  //       //max-height: 300px;
-  //       width: 100%;
-  //       margin-bottom: 30px;
-  //     }
-  //   }
-  // }
+      img {
+        height: auto;
+        max-height: 300px;
+        width: 100px;
+        margin-bottom: 30px;
+        
+      }
+    }
+  }
+
+  img {
+    height: auto;
+    max-height: 300px;
+    width: 500px;
+  }
 
   &__title {
-    margin: 0;
-    color: mixins.$color-purple;
+    margin-top: 10px;
+    color: mixins.$color-dark;
     grid-area: title;
-    font-size: 32px;
+    font-size: 35px;
     font-weight: bold;
   }
 
   &__description {
     grid-area: description;
     line-height: 1.75rem;
-    min-height: 175px;
+    min-height: 100px;
+    font-size: 18px;
+    font-weight: 500;
     @include mixins.mobile {
       min-height: 0;
     }
@@ -63,14 +73,7 @@
 
   &__image {
     grid-area: image;
-    width: 50%;
-    // height: 1px;
-    border: 3px solid red;
-    // //max-height: 90%;
-    // object-fit: contain;
-    // background-size: contain;
-    // box-shadow: 0 18.025px 43.775px rgba(0, 0, 0, 0.25);
-    // box-sizing: border-box;
+    width: 100%;
 
     @include mixins.mobile {
       height: 300px;
@@ -87,15 +90,17 @@
   }
 
   &__button {
-    margin-left: 30px;
+    margin-left: 40px;
+    margin-bottom: 10px;
     font-size: 14px;
     font-weight: bold;
     border-radius: 4px;
-    padding: 6px 20px;
+    padding: 12px 20px;
     border: none;
-    background-color: mixins.$color-purple;
+    background-color: mixins.$color-dark-blue;
     color: white;
     position: relative;
+    z-index: 90;
 
     &:hover {
       transition: 0.2s all;
@@ -107,7 +112,7 @@
     &:before {
       content: ' ';
       position: absolute;
-      background-color: mixins.$color-purple;
+      background-color: mixins.$color-dark;
       top: 0;
       left: 0;
       border-radius: 4px;
@@ -129,7 +134,7 @@
     grid-template-columns: 1fr 1fr;
 
     .product__image {
-      height: 300px;
+      height: 300%;
       width: 100%;
       margin-bottom: 30px;
     }
