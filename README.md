@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# *Snipcart_NextJS*
 
-## Getting Started
+**Snipcart_NextJS** is an ecommerce web application created with Next.js and Snipcart.
+Next.js is a JavaScript framework that allows you to make web applications and also server-side rendering.
+Snipcart is a shopping cart platform to that allows you to add the most common e-commerce features 
+to any website or web application in minutes.
 
-First, run the development server:
+## User Stories
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The following functionality is completed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [x] User can look into different products on the page.
+- [x] User can add one or many products to cart.
+- [x] The number of products and amount of money is shown.
+- [x] Checkout page is shown after button is clicked.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Demo
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Here's a demo of implemented user stories:
 
-## Learn More
+<img src='demo.PNG' title='Demo Image' width='' alt='Demo' />
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Open-source libraries used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Snipcart](https://app.snipcart.com/register) - Snipcart account
+- [Node.js](https://nodejs.org/en/) - JavaScript runtime environment.
+- [Npm](https://www.npmjs.com/) - Install and develop Next.js framework.
+- [Next.js](https://nextjs.org/) - Application production and server side rendering.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
