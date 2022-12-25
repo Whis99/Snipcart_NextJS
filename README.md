@@ -2,7 +2,7 @@
 
 **Snipcart_NextJS** is an ecommerce web application created with Next.js and Snipcart.
 Next.js is a JavaScript framework that allows you to make web applications and also server-side rendering.
-Snipcart is a shopping cart platform to that allows you to add the most common e-commerce features 
+Snipcart is a shopping cart platform that allows you to add the most common e-commerce features 
 to any website or web application in minutes.
 
 ## User Stories
@@ -29,3 +29,11 @@ Here's a demo of implemented user stories:
 - [Npm](https://www.npmjs.com/) - Install and develop Next.js framework.
 - [Next.js](https://nextjs.org/) - Application production and server side rendering.
 
+## Testing web app
+
+- Install Node.js.
+- Clone repository.
+- Go to project using command-line.
+- Type *npm i*.
+- *npm run dev*.
+Your page will open on http://localhost:3000/
